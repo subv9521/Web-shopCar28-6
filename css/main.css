@@ -3,14 +3,9 @@ main {
     margin-top: 68px;
 }
 
-.new-product-container {
-    width: 100%;
+.container-new-product {
     border-radius: 10px;
     background-color: var(--primary-color);
-}
-
-.new-product-description {
-    margin: 140px 0 100px 60px;
 }
 
 .new-product-fist {
@@ -60,31 +55,27 @@ main {
     opacity: 0.7;
 }
 
-
-
 .new-product-img-wrap {
-    height: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .new-product-img {
-    position: absolute;
-    top: 10%;
-    width: 80%;
+    /* flex: 1; */
+    width: 100%;
     object-fit: contain;
+    margin: auto;
 }
 
 .new-product-shadow {
     display: block;
+    margin: auto;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.4);
-    width: 80%;
+    background: rgba(0, 0, 0, 0.6);
+    width: 75%;
     height: 51px;
-    filter: blur(30px);
-    position: absolute;
-    bottom: 10%;
-    left: 0%;
-    transform: translateX(6%);
+    filter: blur(25px);
 }
 
 /* Main- new-product*/
@@ -231,10 +222,9 @@ main {
     text-decoration: none;
 }
 
-.pagination-products {
+.pagination-products-list {
     display: flex;
     justify-content: end;
-    margin-top: 20px;
 }
 
 .pagination-item {
@@ -278,16 +268,13 @@ main {
 }
 
 /* Service offer */
-.service-offer {
-    margin-top: 60px;
-}
 
 /* Model spare */
 .model-spare {
     margin-top: 80px;
 }
 
-.model-spare__container {
+.container-model-spare {
     background-color: var(--primary-color);
     border-radius: 5px;
 }
@@ -318,7 +305,8 @@ main {
 }
 
 .model-spare__btn:hover {
-    background-color: var(--primary-color);
+    background-color: #74acff;
+
 }
 
 .model-spare__btn-icon {
@@ -350,6 +338,7 @@ main {
 }
 
 .latest-model-btn {
+    color: var(--text-color);
     font-weight: 400;
     font-size: 28px;
 }
@@ -369,16 +358,14 @@ main {
     font-weight: 500;
     font-size: 32px;
     color: var(--text-color);
-}
-
-.brands__container {
-    margin-top: 30px;
+    display: block;
+    margin-bottom: 30px;
 }
 
 .brands-link {
     height: 180px;
     padding: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 5px;
 
     display: flex;

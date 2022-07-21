@@ -30,9 +30,15 @@ body {
     font-size: 14px;
 }
 
+.products__vote-star-icon:hover {
+    text-decoration: none;
+}
+
 .products-price {
+    margin: 0;
     font-weight: 500;
     font-size: 20px;
     color: var(--button-color);
     font-family: 'Roboto';
 }
+
