@@ -1,3 +1,6 @@
+
+
+
 /* Main- new-product*/
 main {
     margin-top: 68px;
@@ -50,11 +53,6 @@ main {
     opacity: 0.8;
 }
 
-.new-product__search-button:hover {
-    background-color: var(--button-color);
-    opacity: 0.7;
-}
-
 .new-product-img-wrap {
     display: flex;
     flex-direction: column;
@@ -79,7 +77,6 @@ main {
 }
 
 /* Main- new-product*/
-
 .offer {
     margin-top: 40px;
 }
@@ -94,22 +91,24 @@ main {
     overflow: hidden;
 }
 
-.flex {
+.offer__product-img-wrap {
+    width: 240px;
+    height: 100%;
+    background-color: var(--primary-color);
     display: flex;
-    justify-content: space-between;
-
 }
 
 .offer__product-img {
+    display: block;
     height: 100%;
-    background-color: var(--primary-color);
+    object-fit: contain;
+    margin: auto;
 }
 
 .offer__product-dsc {
     flex: 1;
     list-style: none;
     margin-left: 15px;
-    text-decoration: none;
 }
 
 .offer__product-dsc-head {
@@ -144,18 +143,9 @@ main {
     padding: 5px;
 }
 
-.avtive.category-product {
-    background-color: var(--button-color);
-}
-
-.avtive.category-product:hover {
-    background-color: var(--button-color);
-    filter: brightness(95%);
-}
-
 .category-product {
-    display: block;
     width: 100%;
+    color: var(--text-color);
     background-color: var(--primary-color);
     border-radius: 5px;
     text-decoration: none;
@@ -168,32 +158,32 @@ main {
 .category-product:hover {
     background-color: var(--primary-color);
     filter: brightness(95%);
+    cursor: pointer;
+}
+
+.category-product.active {
+    background-color: var(--button-color);
+    color: var(--white-color);
 }
 
 .category-list__img {
     margin: 20px;
+    max-width: 35px;
+}
+
+.category-list__name-and-icon.active {
+    color: var(--white-color);
 }
 
 .category-list__name {
     font-weight: 500;
     font-size: 22px;
     line-height: 20px;
-    color: var(--text-color);
     flex: 1;
-}
-
-.avtive.category-list__name {
-    color: var(--white-color);
-}
-
-.avtive.category-list__icon-right {
-    color: var(--white-color);
-    background-color: #4200FF;
 }
 
 .category-list__icon-right {
     font-size: 1.3rem;
-    color: var(--text-color);
     margin-right: 30px;
 }
 
@@ -214,7 +204,7 @@ main {
 
 .products-name {
     display: block;
-    margin: 20px 20px;
+    margin: 20px;
     font-weight: 500;
     font-size: 17px;
     line-height: 22px;

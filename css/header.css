@@ -6,6 +6,8 @@
     z-index: 1;
     background-color: var(--white-color);
     box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
 }
 
 /* Section NavBar */
@@ -78,6 +80,7 @@
 
 .navbar_service-list a {
     font-size: 22px;
+    line-height: 22px;
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;

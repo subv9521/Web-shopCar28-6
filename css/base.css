@@ -10,6 +10,16 @@ body {
     font-size: 62.5%;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.new-product__search-button:hover,
+.category-product.active:hover {
+    background-color: var(--button-color);
+    filter: brightness(92%);
+}
+
 :root {
     --primary-color: #F5F5F5;
     --text-color: #000000;
