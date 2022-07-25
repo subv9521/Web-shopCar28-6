@@ -86,7 +86,7 @@
     }
 
     .category {
-        height: calc(100% - 10px);
+        height: calc(100% - 20px);
     }
 
     .category-list__img {
@@ -105,7 +105,7 @@
     }
 
     .products-item {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .products-name {
@@ -144,7 +144,7 @@
     }
 
     .service-offer .col-fix {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .model-spare {
@@ -252,7 +252,7 @@
     }
 
     .offer .col-fix {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .classify-products {
@@ -268,7 +268,15 @@
     }
 
     .classify-products .col-fix {
-        padding: 0 8px;
+        padding: 0 10px;
+    }
+
+    .products-item {
+        margin-bottom: 20px;
+    }
+
+    .category {
+        height: calc(100% - 20px);
     }
 
     .category-list__icon-right {
@@ -296,7 +304,7 @@
     }
 
     .service-offer .col-fix {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .model-spare {
@@ -401,8 +409,8 @@
         justify-content: end;
     }
 
-    .latest-product .col-fix {
-        margin-bottom: 20px;
+    .category {
+        height: calc(100% - 20px);
     }
 
 }
