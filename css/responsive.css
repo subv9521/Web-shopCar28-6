@@ -61,7 +61,7 @@
     }
 
     .offer .col-fix {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .offer__product-img-wrap {
@@ -73,8 +73,8 @@
         width: 100%;
     }
 
-    .classify-products {
-        padding: 0 10px;
+    .classify-products .row-fix {
+        margin: 0 -10px;
     }
 
     .classify-products .col-fix {
@@ -184,7 +184,7 @@
     }
 
     .latest-product .col-fix {
-        padding: 0 5px;
+        padding: 0 10px;
     }
 
     .brands .row-fix {
@@ -381,10 +381,6 @@
         max-width: 70%;
     }
 
-    .offer .col-fix {
-        margin-bottom: 20px;
-    }
-
     .classify-products {
         margin-top: 40px;
     }
@@ -482,8 +478,7 @@
     }
 
     .offer .col-fix {
-        padding: 0 8px;
-        margin-bottom: 10px;
+        padding: 0 10px;
     }
     
     .offer__product-img {
