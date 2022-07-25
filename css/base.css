@@ -37,7 +37,7 @@ a:hover {
 
 .products__vote-star-icon {
     color: var(--star-color);
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .products__vote-star-icon:hover {

@@ -20,44 +20,33 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="container container-fix">
-                <div class="row fix-padding">
-                    <div class="col col-xl-2 col-12 col-sm-5 col-md-3 col-lg-2">
-                        <div class="logo-and-icon-menu">
-                            <i class="header-mobile-menu fa-solid fa-bars" onclick="showMenu()"></i>
-                            <div class="logo__text-warp">
-                                <a href="" class="logo__text">
-                                    <span class="logo-uz">UZ</span>
-                                    <span class="logo-car">Car</span>
-                                </a>
-                            </div>
-                        </div>
+            <div class="container container-fix container container-fix-fix">
+                <div class="header__navbar-list">
+                    <i class="header-mobile-menu fa-solid fa-bars" onclick="showMenu()"></i>
+                    <div class="logo__text">
+                        <a href="#" class="logo-uz">UZ</a>
+                        <a href="#" class="logo-car">Car</a>
                     </div>
-                    <div class="col col-xl-6 col-sm-7 col-sm-fix col-md-9 col-lg-5">
-                        <ul class="navbar_service-list">
-                            <li><a href="">Mahsulotlar</a></li>
-                            <li><a href="">Chegirmalar</a></li>
-                            <li><a href="">Yetkazib berish</a></li>
-                        </ul>
+                    <div class="header__navbar-item-wrap">
+                        <li class="header__navbar-item"><a href="">Mahsulotlar</a></li>
+                        <li class="header__navbar-item"><a href="">Chegirmalar</a></li>
+                        <li class="header__navbar-item d-sm-none d-md-block"><a href="">Yetkazib berish</a></li>
                     </div>
-                    <div class="col col-xl-4 col-lg-5">
-                        <ul class="new-product__action-list d-sm-none d-lg-flex">
-                            <li class="new-product__action-number">+998 (99) 121 23 08</li>
-                            <li class="new-product__action-user"><img src="./icons/user.svg" alt=""></li>
-                            <li class="new-product__action-heart"><img src="./icons/heart.svg" alt=""></li>
-                            <li class="new-product__action-cart"><img src="./icons/cart.svg" alt=""></li>
-                        </ul>
-                    </div>
-                   
+                    <ul class="header__navbar-item-action d-none d-lg-flex">
+                        <li class="header__navbar-item-number d-lg-flex">+998 (99) 121 23 08</li>
+                        <li class="header__navbar-item-user d-lg-flex"><img src="./icons/user.svg" alt=""></li>
+                        <li class="header__navbar-item-heart d-lg-flex"><img src="./icons/heart.svg" alt=""></li>
+                        <li class="header__navbar-item-cart d-lg-flex"><img src="./icons/cart.svg" alt=""></li>
+                    </ul>
                 </div>
             </div>
         </header>
 
         <main class="main">
             <div class="new-product">
-                <div class="container container-fix container-new-product">
-                    <div class="row">
-                        <div class="col col-12 col-lg-6 col-xl-6">
+                <div class="container container-fix">
+                    <div class="row row-fix">
+                        <div class="col col-fix col-12 col-lg-6 col-xl-6">
                             <div class="new-product-description">
                                 <span class="new-product-fist">O‘zbekistonda eng yangi mashina shinalari, 30% gacha chegirma.</span>
                                 <span class="new-product-second">O‘zbekiston bo‘ylab yetkazib berish bepul.</span>
@@ -71,7 +60,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-12 col-lg-6 col-xl-6">
+                        <div class="col col-fix col-12 col-lg-6 col-xl-6">
                             <div class="new-product-img-wrap">
                                 <img class="new-product-img" src="./img/png-transparent-car-wheel-tire-rim-motor-vehicle-service-car-car-automobile-repair-shop-vehicle-depositphotos-bgremover 1.png" alt="new tires">
                                 <span class="new-product-shadow"></span>
@@ -87,7 +76,7 @@
                         <div class="col col-fix col-12 col-lg-4 col-xl-4">
                             <div class="offer__product">
                                 <div class="offer__product-img-wrap">
-                                    <img src="./img/427-4278337_automotive-seat-car-seat-hd-png-download 1.jpg" alt="" class="offer__product-img">
+                                    <img src="./img/427-4278337_automotive-seat-car-seat-hd-png-download 1.png" alt="" class="offer__product-img">
                                 </div>
                                 <a href="#" class="offer__product-dsc">
                                     <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
@@ -109,7 +98,7 @@
                         <div class="col col-fix col-12 col-lg-4 col-xl-4">
                             <div class="offer__product">
                                 <div class="offer__product-img-wrap">
-                                    <img src="./img/seat.jpg" alt="" class="offer__product-img">
+                                    <img src="./img/seat.png" alt="" class="offer__product-img">
                                 </div>
                                 <a href="#" class="offer__product-dsc">
                                     <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
@@ -124,7 +113,7 @@
             <div class="classify-products">
                 <div class="container container-fix">
                     <div class="row row-fix">
-                        <div class="col col-fix col-6 col-md-4 col-lg-3 col-xl-4">
+                        <div class="col col-fix col-6 col-sm-6 col-md-5 col-lg-4">
                             <div class="category">
                                 <div id="shinalar" class="category-product active" onclick="changeProductList('Shinalar', this)">
                                     <img class="category-list__img" src="./img/Shinalar.png"></img>
@@ -143,12 +132,12 @@
                                 </div>
                                 <div id="akkumlyatorlar" class="category-product" onclick="changeProductList('Akkumlyatorlar', this)">
                                     <img class="category-list__img" src="./img/Akkumlyatorlar.png"></img>
-                                    <span class="category-list__name">Akkumlyatorlar</span>
+                                    <span class="category-list__name">Akkuml yatorlar</span>
                                     <i class="category-list__icon-right fa-solid fa-angle-right"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-fix col-6 col-md-8 col-lg-9 col-xl-8">
+                        <div class="col col-fix col-6 col-sm-6 col-md-7 col-lg-8">
                             <div class="row row-fix">
                                 <div class="col col-fix col-12 col-md-6 col-lg-4 col-xl-4">
                                     <div class="products-item">
@@ -255,65 +244,67 @@
             </div>
             
             <div class="pagination-products">
-                <!-- <div class="container container-xl">
+                <div class="container container-fix">
                     <ul class="pagination-products-list">
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-item__link fist-page">
-                                <i class="pagination-item__icon fas fa-angle-left"></i>
-                            </a>
+                        <li class="fist-last-page">
+                            <i class="pagination-item__icon fas fa-angle-left fist-page"></i>
+                        </li>
+                        <li class="pagination-item active">
+                            1
                         </li>
                         <li class="pagination-item">
-                            <a href="#" class="pagination-item__link selector-page">1</a>
+                            2
                         </li>
                         <li class="pagination-item">
-                            <a href="#" class="pagination-item__link">2</a>
+                            3
                         </li>
                         <li class="pagination-item">
-                            <a href="#" class="pagination-item__link">...</a>
+                            4
                         </li>
                         <li class="pagination-item">
-                            <a href="#" class="pagination-item__link">9</a>
+                            5
                         </li>
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-item__link">10</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-item__link">
-                                <i class="pagination-item__icon fas fa-angle-right"></i>
-                            </a>
+                        <li class="fist-last-page">
+                            <i class="pagination-item__icon fas fa-angle-right"></i>
                         </li>
                     </ul>
-                </div> -->
+                </div>
             </div>
 
             <div class="service-offer">
-                <div class="container container-xl">
+                <div class="container container-fix">
                     <div class="row row-fix">
-                        <div class="col col-fix col-xl-4">
+                        <div class="col col-fix col-12 col-lg-4 col-xl-4">
                             <div class="offer__product">
-                                <!-- <img src="./img/service-img/1.png" alt="" class="offer__product-img">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/service-img/1.png" alt="" class="offer__product-img">
+                                </div>
                                 <a href="#" class="offer__product-dsc">
-                                    <span class="offer__product-dsc-head">Oson yetkazib berish</span>
-                                    <span class="offer__product-dsc-footer">Maxsulotni qo‘lingizga olmaguncha to‘lov qilmang.</span>
-                                </a> -->
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="col col-fix col-xl-4">
+                        <div class="col col-fix col-12 col-lg-4 col-xl-4">
                             <div class="offer__product">
-                                <!-- <img src="./img/service-img/2.png" alt="" class="offer__product-img">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/service-img/2.png" alt="" class="offer__product-img">
+                                </div>
                                 <a href="#" class="offer__product-dsc">
-                                    <span class="offer__product-dsc-head">Ishonchli to‘lov</span>
-                                    <span class="offer__product-dsc-footer">Maxsulotni qo‘lingizga olmaguncha to‘lov qilmang.</span>
-                                </a> -->
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="col col-fix col-xl-4">
+                        <div class="col col-fix col-12 col-lg-4 col-xl-4">
                             <div class="offer__product">
-                                <!-- <img src="./img/service-img/24.png" alt="" class="offer__product-img">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/service-img/24.png" alt="" class="offer__product-img">
+                                </div>
                                 <a href="#" class="offer__product-dsc">
-                                    <span class="offer__product-dsc-head">Tezkor buyurtma berish</span>
-                                    <span class="offer__product-dsc-footer">Maxsulotni qo‘lingizga olmaguncha to‘lov qilmang.</span>
-                                </a> -->
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -321,39 +312,37 @@
             </div>
 
             <div class="model-spare">
-                <div class="container container-xl container-model-spare">
-                    <div class="row">
-                        <div class="col col-xl-6">
-                            <section class="model-spare__dcs-wrap">
-                                <!-- <div class="model-spare__dcs">
-                                    <span>Avtomabil ehtiyot qismlari, eng ishonchli va sifatli.</span>
-                                    <button class="model-spare__btn">
-                                        Barchasi
-                                        <i class="model-spare__btn-icon fas fa-angle-right"></i>
-                                    </button>
-                                </div> -->
-                            </section>
+                <div class="container container-fix">
+                    <div class="row row-fix">
+                        <div class="col col-fix col-12 col-sm-12 col-lg-6">
+                            <div class="model-spare__dcs">
+                                <span>Avtomabil ehtiyot qismlari, eng ishonchli va sifatli.</span>
+                                <button class="model-spare__btn">
+                                    Barchasi
+                                    <i class="model-spare__btn-icon fas fa-angle-right"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="col col-xl-6">
-                            <!-- <img src="./img/spare model.png" alt="" class="model-spare-img"> -->
+                        <div class="col col-fix col-12 col-sm-12 col-lg-6">
+                            <img src="./img/spare model.png" alt="" class="model-spare-img">
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="latest-product">
-                <div class="container container-xl">
+                <div class="container container-fix">
                     <div class="latest-product__header">
-                        <!-- <span>Eng songi Mahsulotlar</span>
+                        <span>Eng songi Mahsulotlar</span>
                         <a href="#" class="latest-model-btn">
                             Barchasi
                             <i class="latest-model-btn-icon fas fa-angle-right"></i>
-                        </a> -->
+                        </a>
                     </div>
                     <div class="row row-fix">
-                        <div class="col col-fix col-xl-3">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
                             <div class="products-item">
-                                <!-- <img src="./img/new-products/1.png" alt="">
+                                <img src="./img/new-products/1.png" alt="">
                                 <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
                                 <div class="products__vote-price">
                                     <a href="#">
@@ -364,12 +353,12 @@
                                         <i class="products__vote-star-icon fa-solid fa-star"></i>
                                     </a>
                                     <p class="products-price">$86.00</p>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="col col-fix col-xl-3">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
                             <div class="products-item">
-                                <!-- <img src="./img/new-products/2.png" alt="">
+                                <img src="./img/new-products/2.png" alt="">
                                 <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
                                 <div class="products__vote-price">
                                     <a href="#">
@@ -380,12 +369,12 @@
                                         <i class="products__vote-star-icon fa-solid fa-star"></i>
                                     </a>
                                     <p class="products-price">$86.00</p>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="col col-fix col-xl-3">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
                             <div class="products-item">
-                                <!-- <img src="./img/new-products/3.png" alt="">
+                                <img src="./img/new-products/3.png" alt="">
                                 <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
                                 <div class="products__vote-price">
                                     <a href="#">
@@ -396,12 +385,12 @@
                                         <i class="products__vote-star-icon fa-solid fa-star"></i>
                                     </a>
                                     <p class="products-price">$86.00</p>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="col col-fix col-xl-3">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
                             <div class="products-item">
-                                <!-- <img src="./img/new-products/4.png" alt="">
+                                <img src="./img/new-products/4.png" alt="">
                                 <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
                                 <div class="products__vote-price">
                                     <a href="#">
@@ -412,7 +401,7 @@
                                         <i class="products__vote-star-icon fa-solid fa-star"></i>
                                     </a>
                                     <p class="products-price">$86.00</p>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -423,56 +412,56 @@
             </div>
 
             <div class="brands">
-                <div class="container container-xl">
-                    <!-- <span class="brands-header">Brendlar</span> -->
+                <div class="container container-fix container container-fix-xl">
+                    <span class="brands-header">Brendlar</span>
                     <div class="row row-fix">
-                        <div class="col col-fix col-xl-3">
-                            <!-- <a href="" class="brands-link">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
                                 <img src="./img/brend/audi.png" alt="">
                                 <span>Audi</span>
-                            </a> -->
+                            </a>
                         </div>
-                        <div class="col col-fix col-xl-3">
-                            <!-- <a href="" class="brands-link">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
                                 <img src="./img/brend/Mercedes.png" alt="">
                                 <span>Mercedes</span>
-                            </a> -->
+                            </a>
                         </div>
-                        <div class="col col-fix col-xl-3">
-                            <!-- <a href="" class="brands-link">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
                                 <img src="./img/brend/Daewoo.png" alt="">
                                 <span>Daewoo</span>
-                            </a> -->
+                            </a>
                         </div>
-                        <div class="col col-fix col-xl-3">
-                            <!-- <a href="" class="brands-link">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
                                 <img src="./img/brend/Hyundai.png" alt="">
                                 <span>Hyundai</span>
-                            </a> -->
+                            </a>
                         </div>
-                        <div class="col col-fix col-xl-3">
-                            <!-- <a href="" class="brands-link">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
                                 <img src="./img/brend/Tesla.png" alt="">
                                 <span>Tesla</span>
-                            </a> -->
+                            </a>
                         </div>
-                        <div class="col col-fix col-xl-3">
-                            <!-- <a href="" class="brands-link">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
                                 <img src="./img/brend/Toyota.png" alt="">
                                 <span>Toyota</span>
-                            </a> -->
+                            </a>
                         </div>
-                        <div class="col col-fix col-xl-3">
-                            <!-- <a href="" class="brands-link">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
                                 <img src="./img/brend/Ford.png" alt="">
                                 <span>Ford</span>
-                            </a> -->
+                            </a>
                         </div>
-                        <div class="col col-fix col-xl-3">
-                            <!-- <a href="" class="brands-link">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
                                 <img src="./img/brend/Chevrolet.png" alt="">
                                 <span>Chevrolet</span>
-                            </a> -->
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -480,50 +469,50 @@
         </main>
 
         <footer class="footer">
-            <div class="container container-xl">
+            <div class="container container-fix container container-fix-xl">
                 <div class="row row-fix">
-                    <div class="col col-fix col-xl-3">
+                    <div class="col col-fix col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="footer-logo-hotline">
-                            <!-- <div class="logo">
+                            <div class="logo">
                                 <span class="logo__circle"></span>
                                 <a href="" class="logo__text">
                                     <span class="logo-uz avtive">UZ</span>
                                     <span class="logo-car avtive">Car</span>
                                 </a>
                             </div>
-                            <p>+998 (99) 121 23 08</p> -->
+                            <p>+998 (99) 121 23 08</p>
                         </div>
                     </div>
-                    <div class="col col-fix col-xl-3">
+                    <div class="col col-fix col-12 col-sm-6 col-md-4 col-lg-3">
                         <ul class="footer-information">
-                            <!-- <li class="footer-information__head">Ma'lumotlar</li>
+                            <li class="footer-information__head">Ma'lumotlar</li>
                             <li>Tovar yetkazib berish</li>
                             <li>Tovarni qaytarish</li>
-                            <li>Biz haqimizda</li> -->
+                            <li>Biz haqimizda</li>
                         </ul>
                     </div>
-                    <div class="col col-fix col-xl-3">
+                    <div class="col col-fix col-12 col-sm-6 col-md-4 col-lg-3">
                         <ul class="footer-information">
-                            <!-- <li class="footer-information__head">Biz bilan aloqa</li>
+                            <li class="footer-information__head">Biz bilan aloqa</li>
                             <li>+998 99 121 23 08</li>
                             <li>info@Car.uz</li>
-                            <li>Qoraqalpog’iston, Beruniy</li> -->
+                            <li>Qoraqalpog’iston, Beruniy</li>
                         </ul>
                     </div>
-                    <div class="col col-fix col-xl-3">
+                    <div class="col col-fix col-12 col-sm-6 col-md-4 col-lg-3">
                         <ul class="footer-information">
-                            <!-- <li class="footer-information__head">Ijtimoiy tarmoqlarimiz</li>
+                            <li class="footer-information__head">Ijtimoiy tarmoqlarimiz</li>
                             <div class="information-social">
-                                <a href="#">
+                                <a href="https://twitter.com/?lang=vi">
                                     <i class="information-social fa-brands fa-twitter"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.instagram.com/">
                                     <i class="information-social fa-brands fa-instagram"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.facebook.com/">
                                     <i class="information-social fa-brands fa-facebook"></i>
                                 </a>
-                            </div> -->
+                            </div>
                         </ul>
                     </div>
                 </div>  
@@ -533,7 +522,7 @@
     </div>
 
     <div class="show-menu">
-        <div class="show-menu__container">
+        <div class="show-menu__container container-fix">
             <ul class="menu-user-list">
                 <li class="menu-user-list-icon">
                     <img src="./icons/user.svg" alt="">
