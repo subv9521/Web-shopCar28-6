@@ -14,18 +14,19 @@ a:hover {
     text-decoration: none;
 }
 
-.new-product__search-button:hover,
-.category-product.active:hover {
-    background-color: var(--button-color);
-    filter: brightness(92%);
-}
-
 :root {
     --primary-color: #F5F5F5;
     --text-color: #000000;
     --white-color: #fff;
     --star-color: #FED712;
     --button-color: #4200FF;
+    --color-box-shadow:  rgb(0 0 0 / 10%);
+}
+
+.new-product__search-button:hover,
+.category-product.active:hover {
+    background-color: var(--button-color);
+    filter: brightness(92%);
 }
 
 .products__vote-price {
