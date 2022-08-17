@@ -35,8 +35,9 @@
 
 .logo__text:hover {
     text-decoration: none;
+    color: unset;
+    cursor: pointer;
 }
-
 
 .logo-uz {
     font-size: 36px;
@@ -48,11 +49,6 @@
     font-size: 27px;
     text-decoration: underline !important;
     transform: translateY(3px);
-}
-
-.logo-uz:hover,
-.logo-car {
-    cursor: pointer;
 }
 
 .navbar__logo,
@@ -148,7 +144,7 @@
     background-color: var(--white-color);
     box-shadow: 5px 10px 8px #888888;
     position: relative;
-    animation: mobileMenuSideIn linear 0.3s;
+    animation: mobileMenuSideIn linear 0.5s;
 }
 
 @keyframes mobileMenuSideIn {

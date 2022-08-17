@@ -8,10 +8,12 @@
 body {
     font-family: 'DM Sans', sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 a:hover {
     text-decoration: none;
+    color: unset;
 }
 
 :root {
