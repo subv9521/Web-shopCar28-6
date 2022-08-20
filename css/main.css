@@ -129,11 +129,14 @@ main {
 
 
 /* Classify-products */
+.classify-products {
+    margin-top: 20px;
+}
+
 .category {
-    height: calc(100% - 20px);
+    padding: 5px;
     border-radius: 10px;
     background-color: var(--primary-color);
-    overflow: hidden;
 }
 
 .category-product {
@@ -247,6 +250,11 @@ main {
     color: var(--button-color);
 }
 
+/* service-offer */
+.service-offer {
+    margin-top: 40px;
+}
+
 
 /* Model spare */
 
@@ -255,6 +263,9 @@ main {
     border-radius: 5px;
 }
 
+.model-spare {
+    margin-top: 20px;
+}
 
 .model-spare__dcs {
     height: 100%;
@@ -294,7 +305,7 @@ main {
 
 /* Latest Products */
 .latest-product {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .latest-product__header {
@@ -325,7 +336,7 @@ main {
 
 /* brands */
 .brands {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .brands-header {
@@ -339,7 +350,6 @@ main {
 .brands-link {
     height: 180px;
     padding: 25px;
-    margin-bottom: 20px;
     border-radius: 5px;
 
     display: flex;

@@ -144,7 +144,7 @@
     background-color: var(--white-color);
     box-shadow: 5px 10px 8px #888888;
     position: relative;
-    animation: mobileMenuSideIn linear 0.5s;
+    animation: mobileMenuSideIn linear 0.3s;
 }
 
 @keyframes mobileMenuSideIn {
